@@ -1,0 +1,17 @@
+<section class="LoginManagerScreen">
+  <form [formGroup]="loginManagerForm" (ngSubmit)="onSubmit()">
+    <h1>Inicio de Sesion</h1>
+    <div>
+      <label>DNI:</label>
+      <input type="email" id="email" formControlName="DNI" placeholder="Ingrese su DNI">
+    </div>
+    <div>
+      <label>Contraseña:</label>
+      <input type="password" id="password" formControlName="password" placeholder="Ingrese su contraseña">
+    </div>
+    <button type="submit" [disabled]="!loginManagerForm.valid">Ingresar</button>
+    <div class="redirection">
+      <p>¿Eres Cliente?</p><p class = "ClientButton" routerLink ="/loginClient">Click aquí</p>
+    </div>
+  </form>
+</section>

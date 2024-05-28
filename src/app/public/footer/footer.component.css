@@ -1,0 +1,11 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0077C2;
+}
+
+p {
+  text-align: center;
+  color: #FFFFFF;
+}

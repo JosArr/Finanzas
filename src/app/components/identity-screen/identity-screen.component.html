@@ -1,0 +1,11 @@
+<section class="SectionScreen">
+  <form [formGroup]="typeForm">
+    <h1 class="titleSS">Inicio de Sesion</h1>
+    <div>
+      <p class="type">Eres: </p>
+      <button (click)="toManager()">Gerente</button>
+      <p>O</p>
+      <button (click)="toClient()">Cliente</button>
+    </div>
+  </form>
+</section>
