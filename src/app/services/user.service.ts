@@ -8,7 +8,7 @@ import {map, Observable} from "rxjs";
 })
 
 export class UserService {
-  private apiURL = 'https://my-json-server.typicode.com/JosArr/database/usuarios';
+  private apiURL = 'https://my-json-server.typicode.com/JosArr/Finanzas/manager';
   isLoggedIn: boolean = false;
   usuarioLogueado: any;
   constructor(private http: HttpClient) { }
@@ -17,9 +17,9 @@ export class UserService {
     return this.http.post<any>(this.apiURL, user);
   }
 
-  getUserByEmail(email: string): Observable<any> {
+  getUserByEmail(DNI: string): Observable<any> {
     return this.http.get<any[]>(this.apiURL).pipe(
-      map(users => users.find(user => user.correo === email))
+      map(users => users.find(user => user.DNI === DNI))
     );
   }
   editarUsuario(usuario: any): Observable<any> {
@@ -33,7 +33,7 @@ export class UserService {
   }
   loginUser(email: string, password: string): Observable<any> {
     const loginData = {
-      correo: email,
+      DNI: email,
       contrasena: password,
     };
 

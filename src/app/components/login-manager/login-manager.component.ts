@@ -28,7 +28,7 @@ export class LoginManagerComponent implements OnInit {
         if (user && user.contrasena === this.loginManagerForm.value.contrasena) {
           console.log("Inicio de sesión exitoso");
           this.userService.setUsuarioLogueado(user);
-          //this.router.navigate(['/manager']);
+          this.router.navigate(['/managerMenu']);
         } else {
           console.log("Inicio de sesión fallido");
         }
