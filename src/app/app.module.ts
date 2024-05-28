@@ -21,6 +21,8 @@ import {UserService} from "./services/user.service";
 import {IdentityScreenComponent} from "./components/identity-screen/identity-screen.component";
 import {LoginManagerComponent} from "./components/login-manager/login-manager.component";
 import {LoginClientComponent} from "./components/login-client/login-client.component";
+import {ClientMenuComponent} from "./components/client-menu/client-menu.component";
+import {ManagerMenuComponent} from "./components/manager-menu/manager-menu.component";
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import {LoginClientComponent} from "./components/login-client/login-client.compo
     IdentityScreenComponent,
     LoginManagerComponent,
     LoginClientComponent,
+    ClientMenuComponent,
+    ManagerMenuComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,13 @@
-<p>login-client works!</p>
+<section class="LoginClientScreen">
+  <form [formGroup]="LoginClientForm" (ngSubmit)="onSubmit()">
+    <h1>Consulta Cliente</h1>
+    <div>
+      <label>DNI:</label>
+      <input type="email" id="email" formControlName="DNI" placeholder="Ingrese su DNI">
+    </div>
+    <button type="submit" [disabled]="!LoginClientForm.valid">Ingresar</button>
+    <div class="redirection">
+      <p>¿Eres Gerente?</p><p class = "ManagerButton" routerLink ="/loginManager">Click aquí</p>
+    </div>
+  </form>
+</section>
