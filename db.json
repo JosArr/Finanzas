@@ -4,7 +4,7 @@
       "id": 1,
       "nombre": "John",
       "apellido": "Doe",
-      "DNI": "83947215",
+      "correo": "83947215",
       "contrasena": "pass123",
       "perfil":"https://img-19.ccm.net/3bV7UcV_n3TGXo56bVMKqSzrGqo=/250x/smart/d6f67f5cdba34e5297e6d8c47e384169/ccmcms-esccm/34211459.png"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "nombre": "Jane",
       "apellido": "Smith",
-      "DNI": "15648923",
+      "correo": "15648923",
       "contrasena": "pass456",
       "perfil":"https://i.pinimg.com/222x/09/90/fe/0990fe16f61df266c4fc0923bff98c3b.jpg"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "nombre": "Michael",
       "apellido": "Johnson",
-      "DNI": "94028376",
+      "correo": "94028376",
       "contrasena": "pass789",
       "perfil":"https://i.pinimg.com/736x/1e/c2/72/1ec2720afcf87398c7692f14c2ecdabb.jpg"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "nombre": "Emily",
       "apellido": "Brown",
-      "DNI": "57291048",
+      "correo": "57291048",
       "contrasena": "passabc",
       "perfil":"https://i.pinimg.com/236x/5a/5f/d0/5a5fd0dc0f7810ef3aeaf58883d66113.jpg"
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "nombre": "David",
       "apellido": "Taylor",
-      "DNI": "31982645",
+      "correo": "31982645",
       "contrasena": "passdef",
       "perfil":"https://www.petlife.mx/u/fotografias/m/2023/5/16/f768x1-2048_2175_5050.jpg"
 
@@ -45,7 +45,7 @@
       "id": 6,
       "nombre": "Sophia",
       "apellido": "Anderson",
-      "DNI": "70823419",
+      "correo": "70823419",
       "contrasena": "passghi",
       "perfil":"https://i.pinimg.com/originals/71/d2/32/71d2323d1bf91aa415a4ad339f015ff8.jpg"
     },
@@ -53,7 +53,7 @@
       "id": 7,
       "nombre": "Daniel",
       "apellido": "Wilson",
-      "DNI": "48195736",
+      "correo": "48195736",
       "contrasena": "passjkl",
       "perfil":"https://i.pinimg.com/236x/1f/c3/b4/1fc3b4df2d3b2bff8e4004f1388f2db2.jpg"
     },
@@ -61,7 +61,7 @@
       "id": 8,
       "nombre": "Olivia",
       "apellido": "Martin",
-      "DNI": "26751084",
+      "correo": "26751084",
       "contrasena": "passmno",
       "perfil":"https://www.debate.com.mx/__export/1438103743137/sites/debate/img/trending/2015/07/28/selfie.jpg_1902800913.jpg"
     },
@@ -69,7 +69,7 @@
       "id": 9,
       "nombre": "Matthew",
       "apellido": "Thompson",
-      "DNI": "59382174",
+      "correo": "59382174",
       "contrasena": "passpqr",
       "perfil":"https://i.pinimg.com/236x/d5/f9/b7/d5f9b787cdb213bee291d5840308a8ad.jpg"
     },
@@ -77,7 +77,7 @@
       "id": 10,
       "nombre": "Emma",
       "apellido": "Harris",
-      "DNI": "14627039",
+      "correo": "14627039",
       "contrasena": "passstu",
       "perfil":"https://pbs.twimg.com/media/E5PSn9pWEAQZ6Jj.jpg"
     },
@@ -85,7 +85,7 @@
       "id": 11,
       "nombre": "Sebas",
       "apellido": "Cordova",
-      "DNI": "82039475",
+      "correo": "82039475",
       "contrasena": "manyao123",
       "perfil":"https://pbs.twimg.com/media/EdGzckAXkAA6tkI.jpg"
     },
@@ -93,7 +93,7 @@
       "id": 12,
       "nombre": "Pepe",
       "apellido": "Panchrasio",
-      "DNI": "36157892",
+      "correo": "36157892",
       "contrasena": "ola123456",
       "perfil":"https://www.petlife.mx/u/fotografias/m/2023/5/16/f768x1-2047_2174_5050.jpg"
     },
@@ -101,7 +101,7 @@
       "id": 13,
       "nombre": "Juan",
       "apellido": "Caceres",
-      "DNI": "70418295",
+      "correo": "70418295",
       "contrasena": "elpepe123",
       "perfil":"https://www.drunkgaming.net/uploads/monthly_2022_08/20220805_231114.thumb.jpg.edffaeea0106f8768c1c7d3e9f141d4a.jpg"
     },
@@ -109,7 +109,7 @@
       "id": "14",
       "nombre": "Abraham",
       "apellido": "Estrada",
-      "DNI": "52967138",
+      "correo": "52967138",
       "contrasena": "abraham123456",
       "perfil":"https://ibb.co/jMp6dXx"
     }

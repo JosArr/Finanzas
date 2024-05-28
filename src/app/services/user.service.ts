@@ -17,9 +17,9 @@ export class UserService {
     return this.http.post<any>(this.apiURL, user);
   }
 
-  getUserByEmail(DNI: string): Observable<any> {
+  getUserByEmail(email: string): Observable<any> {
     return this.http.get<any[]>(this.apiURL).pipe(
-      map(users => users.find(user => user.DNI === DNI))
+      map(users => users.find(user => user.correo === email))
     );
   }
   editarUsuario(usuario: any): Observable<any> {
@@ -33,7 +33,7 @@ export class UserService {
   }
   loginUser(email: string, password: string): Observable<any> {
     const loginData = {
-      DNI: email,
+      correo: email,
       contrasena: password,
     };
 

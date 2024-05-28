@@ -9,7 +9,6 @@ import {UserService} from "../../services/user.service";
   styleUrls: ['./login-manager.component.css']
 })
 export class LoginManagerComponent implements OnInit {
-
   loginManagerForm!: FormGroup;
 
   constructor(private fb: FormBuilder, private userService: UserService,
@@ -17,20 +16,21 @@ export class LoginManagerComponent implements OnInit {
 
   ngOnInit() {
     this.loginManagerForm = this.fb.group({
-      DNI: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required]
+      correo: ['', [Validators.required, Validators.email]],
+      contrasena: ['', Validators.required]
     });
   }
 
   onSubmit() {
-    if (this.loginManagerForm.valid){
-      this.userService.getUserByEmail(this.loginManagerForm.value.DNI).subscribe(user => {
+    if (this.loginManagerForm.valid) {
+      this.userService.getUserByEmail(this.loginManagerForm.value.correo).subscribe(user => {
         if (user && user.contrasena === this.loginManagerForm.value.contrasena) {
-          console.log("Inicio de sesión exitoso");
+          console.log('Inicio de sesión exitoso');
           this.userService.setUsuarioLogueado(user);
+
           this.router.navigate(['/managerMenu']);
         } else {
-          console.log("Inicio de sesión fallido");
+          console.log('Inicio de sesión fallido');
         }
       });
     }
