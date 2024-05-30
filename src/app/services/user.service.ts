@@ -8,7 +8,7 @@ import {map, Observable} from "rxjs";
 })
 
 export class UserService {
-  private apiURL = 'https://my-json-server.typicode.com/JosArr/Finanzas/manager';
+  private apiURL = 'https://my-json-server.typicode.com/JosArr/databaseFinanzas/usuarios';
   isLoggedIn: boolean = false;
   usuarioLogueado: any;
   constructor(private http: HttpClient) { }
