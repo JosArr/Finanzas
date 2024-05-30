@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Router, RouterOutlet} from '@angular/router';
-import {UserService} from "./services/user.service";
+import {ManagerService} from "./services/manager.service";
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import {UserService} from "./services/user.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(public userService: UserService, private router: Router) {}
+  constructor(public userService: ManagerService, private router: Router) {}
   title = 'Bill Mind';
   isLoggedIn: boolean = false;
 }

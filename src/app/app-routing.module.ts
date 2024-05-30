@@ -5,6 +5,7 @@ import {LoginManagerComponent} from "./components/login-manager/login-manager.co
 import {LoginClientComponent} from "./components/login-client/login-client.component";
 import {ClientMenuComponent} from "./components/client-menu/client-menu.component";
 import {ManagerMenuComponent} from "./components/manager-menu/manager-menu.component";
+import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
 
 const routes: Routes = [
   { path: 'identity', component: IdentityScreenComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'clientMenu', component: ClientMenuComponent },
   { path: 'managerMenu', component: ManagerMenuComponent },
   { path: '', redirectTo: 'identity', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

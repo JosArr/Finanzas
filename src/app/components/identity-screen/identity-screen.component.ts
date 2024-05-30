@@ -1,6 +1,6 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
-import {UserService} from "../../services/user.service";
+import {ManagerService} from "../../services/manager.service";
 import {Router} from "@angular/router";
 
 @Component({
@@ -12,7 +12,7 @@ export class IdentityScreenComponent{
 
   typeForm!: FormGroup;
 
-  constructor(private fb: FormBuilder, private userService: UserService,
+  constructor(private fb: FormBuilder, private userService: ManagerService,
               private router: Router, private cd: ChangeDetectorRef) {}
 
   toManager(){
