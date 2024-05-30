@@ -1,7 +1,7 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
-import {UserService} from "../../services/user.service";
+import {ManagerService} from "../../services/manager.service";
 
 @Component({
   selector: 'app-login-manager',
@@ -11,7 +11,7 @@ import {UserService} from "../../services/user.service";
 export class LoginManagerComponent implements OnInit {
   loginManagerForm!: FormGroup;
 
-  constructor(private fb: FormBuilder, private userService: UserService,
+  constructor(private fb: FormBuilder, private managerService: ManagerService,
               private router: Router, private cd: ChangeDetectorRef) {}
 
   ngOnInit() {
@@ -23,14 +23,14 @@ export class LoginManagerComponent implements OnInit {
 
   onSubmit() {
     if (this.loginManagerForm.valid) {
-      this.userService.getUserByEmail(this.loginManagerForm.value.correo).subscribe(user => {
-        if (user && user.contrasena === this.loginManagerForm.value.contrasena) {
+      this.managerService.getManagerByEmail(this.loginManagerForm.value.correo).subscribe(manager => {
+        if (manager && manager.contrasena === this.loginManagerForm.value.contrasena) {
           console.log('Inicio de sesión exitoso');
-          this.userService.setUsuarioLogueado(user);
+          this.managerService.setManagerLogueado(manager);
 
           this.router.navigate(['/managerMenu']);
         } else {
-          console.log('Inicio de sesión fallido');
+          alert('Inicio de sesión fallido');
         }
       });
     }

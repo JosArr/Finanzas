@@ -2,12 +2,12 @@
   <form [formGroup]="loginManagerForm" (ngSubmit)="onSubmit()">
     <h1>Inicio de Sesion</h1>
     <div>
-      <label>DNI:</label>
-      <input type="email" id="email" formControlName="correo" placeholder="Ingrese su DNI">
+      <label>E-mail:</label>
+      <input type="email" id="email" formControlName="correo" placeholder="Ingrese su correo">
     </div>
     <div>
       <label>Contraseña:</label>
-      <input type="password" id="password" formControlName="password" placeholder="Ingrese su contraseña">
+      <input type="password" id="password" formControlName="contrasena" placeholder="Ingrese su contraseña">
     </div>
     <button type="submit" [disabled]="!loginManagerForm.valid">Ingresar</button>
     <div class="redirection">
