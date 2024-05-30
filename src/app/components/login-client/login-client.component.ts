@@ -1,7 +1,8 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {UserService} from "../../services/user.service";
+import {ManagerService} from "../../services/manager.service";
 import {Router} from "@angular/router";
+import {UserService} from "../../services/user.service";
 
 @Component({
   selector: 'app-login-client',
@@ -16,18 +17,20 @@ export class LoginClientComponent implements OnInit{
 
   ngOnInit() {
     this.LoginClientForm = this.fb.group({
-      DNI: ['', [Validators.required, Validators.email]]
+      correo: ['', [Validators.required, Validators.email]],
+      contrasena: ['', Validators.required]
     });
   }
   onSubmit() {
     if (this.LoginClientForm.valid){
-      this.userService.getUserByEmail(this.LoginClientForm.value.DNI).subscribe(user => {
-        if (user && user.DNI === this.LoginClientForm.value.DNI) {
+      this.userService.getUserByEmail(this.LoginClientForm.value.correo).subscribe(user => {
+        if (user && user.contrasena === this.LoginClientForm.value.contrasena) {
           console.log("Inicio de sesión exitoso");
           this.userService.setUsuarioLogueado(user);
-          //this.router.navigate(['/manager']);
+
+          this.router.navigate(['/clientMenu']);
         } else {
-          console.log("Inicio de sesión fallido");
+          alert("Inicio de sesión fallido");
         }
       });
     }

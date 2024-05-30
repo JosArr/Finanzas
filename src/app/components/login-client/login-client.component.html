@@ -2,8 +2,12 @@
   <form [formGroup]="LoginClientForm" (ngSubmit)="onSubmit()">
     <h1>Consulta Cliente</h1>
     <div>
-      <label>DNI:</label>
-      <input type="email" id="email" formControlName="DNI" placeholder="Ingrese su DNI">
+      <label>E-mail:</label>
+      <input type="email" id="email" formControlName="correo" placeholder="Ingrese su correo">
+    </div>
+    <div>
+      <label>Contraseña:</label>
+      <input type="password" id="password" formControlName="contrasena" placeholder="Ingrese su contraseña">
     </div>
     <button type="submit" [disabled]="!LoginClientForm.valid">Ingresar</button>
     <div class="redirection">
