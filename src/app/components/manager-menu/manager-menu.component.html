@@ -2,14 +2,19 @@
   <mat-toolbar class="managerTab" color="primary">
     <p>Bienvenido Sr(a) {{ManagerName}}</p>
   </mat-toolbar>
-  <div class="managerInfo">
-    <img src = "{{fotoPerfil}}" alt="Profile Image" class="managerImage">
-    <div>
-      <h2>{{ManagerName}}</h2>
-      <p> </p>
-      <p>{{correoElectronico}}</p>
+  <div class="generalDiv">
+    <div class="managerInfo">
+      <img src = "{{fotoPerfil}}" alt="Profile Image" class="managerImage">
+      <div class="info">
+        <h2>{{ManagerName}}</h2>
+        <p>{{correoElectronico}}</p>
+      </div>
     </div>
-  </div>
-  <div class="managerOptions">
+    <div class="managerOptions">
+      <button class="menu-button" *ngFor="let item of menuItems">
+        <!--<i class="{{ item.icon }}"></i>-->
+        <span>{{ item.text }}</span>
+      </button>
+    </div>
   </div>
 </section>

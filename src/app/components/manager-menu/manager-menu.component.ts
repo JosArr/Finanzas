@@ -18,6 +18,7 @@ export class ManagerMenuComponent implements OnInit{
 
   menuItems=[
     {text: 'Lista Clientes'},
+    {text: 'Añadir Cliente'},
     {text: 'Modificar Información'},
     {text: 'Reportes y estadísticas'},
     {text: 'Cerrar Sesión'}
