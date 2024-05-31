@@ -1,7 +1,7 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
-import {ManagerService} from "../../services/manager.service";
+import {ManagerService} from "../../services/ManagerService/manager.service";
 
 @Component({
   selector: 'app-login-manager',
