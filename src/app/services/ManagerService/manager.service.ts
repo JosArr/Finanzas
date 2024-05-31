@@ -55,7 +55,7 @@ export class ManagerService {
     this.managerLogueado = manager;
     this.isLoggedIn = true;
   }
-  getUsuarioLogueado() {
+  getManagerLogueado() {
     return this.managerLogueado;
   }
 
