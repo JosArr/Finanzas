@@ -84,7 +84,6 @@
 .managerOptions{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   color: black;
   text-align: left;
   background-color: #8BCEE0;
@@ -97,4 +96,34 @@
 
 .info{
   margin-left: 10px;
+}
+
+.menu-button {
+  background-color: #FFA726;
+  border: none;
+  border-radius: 15px;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 250px;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.menu-button i {
+  margin-right: 10px;
+}
+
+.menu-button:hover {
+  background-color: #F2F2F2;
+  border: 2px solid #8B4513;
+  color: #0077C2;
 }

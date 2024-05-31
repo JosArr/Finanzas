@@ -17,11 +17,11 @@ export class ManagerMenuComponent implements OnInit{
   constructor(private managerService: ManagerService, private router:Router) { }
 
   menuItems=[
-    {text: 'Lista Clientes'},
-    {text: 'Añadir Cliente'},
-    {text: 'Modificar Información'},
-    {text: 'Reportes y estadísticas'},
-    {text: 'Cerrar Sesión'}
+    {icon: 'fa fa-list-ul', text: 'Lista Clientes'},
+    {icon: 'fa fa-user-plus', text: 'Añadir Cliente'},
+    {icon: 'fa fa-pen-to-square', text: 'Modificar Información'},
+    {icon: 'fa fa-chart-column', text: 'Reportes y estadísticas'},
+    {icon: 'fa fa-right-from-bracket', text: 'Cerrar Sesión'}
   ];
 
   ngOnInit() {
