@@ -12,13 +12,22 @@ export class ClientMenuComponent implements OnInit {
   correoElectronico: string =  '';
   telefono: string = '';
   fotoPerfil: string = '';
+  ClientLastName: string = '';
+
+
+  purchases = [
+    { name: 'Compra #1' },
+    { name: 'Compra #2' }
+  ];
+
 
   constructor(private userService: UserService, private router: Router) {}
 
   ngOnInit() {
     const ClientLoggedIn = this.userService.getUsuarioLogueado();
     if(ClientLoggedIn){
-      this.ClientName = ClientLoggedIn.nombre + ' ' + ClientLoggedIn.apellido;
+      this.ClientName = ClientLoggedIn.nombre;
+      this.ClientLastName = ClientLoggedIn.apellido;
       this.correoElectronico = ClientLoggedIn.correo;
       this.telefono = ClientLoggedIn.telefono;
       this.fotoPerfil = ClientLoggedIn.perfil;
