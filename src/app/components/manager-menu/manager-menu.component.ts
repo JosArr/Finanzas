@@ -2,6 +2,10 @@ import {Component, OnInit} from '@angular/core';
 import {ManagerService} from "../../services/ManagerService/manager.service";
 import {Router} from "@angular/router";
 
+/*function popUP() {
+  alert("Funciona perroooooos");
+}
+*/
 @Component({
   selector: 'app-manager-menu',
   templateUrl: './manager-menu.component.html',
@@ -20,8 +24,7 @@ export class ManagerMenuComponent implements OnInit{
     {icon: 'fa fa-list-ul', text: 'Lista Clientes'},
     {icon: 'fa fa-user-plus', text: 'Añadir Cliente'},
     {icon: 'fa fa-pen-to-square', text: 'Modificar Información'},
-    {icon: 'fa fa-chart-column', text: 'Reportes y estadísticas'},
-    {icon: 'fa fa-right-from-bracket', text: 'Cerrar Sesión'}
+    {icon: 'fa fa-chart-column', text: 'Reportes y estadísticas'}
   ];
 
   ngOnInit() {
@@ -32,5 +35,9 @@ export class ManagerMenuComponent implements OnInit{
       this.telefono = ManagerLoggedIn.telefono;
       this.fotoPerfil = ManagerLoggedIn.perfil;
     }
+  }
+  cerrarSesion(){
+    this.managerService.cerrarSesion();
+    this.router.navigate(['/loginManager']);
   }
 }

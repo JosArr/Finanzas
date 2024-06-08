@@ -83,13 +83,14 @@
 
 .managerOptions{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   color: black;
   text-align: left;
   background-color: #8BCEE0;
   margin-bottom: 30px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 25px;
   width: 80%;
   height: 620px;
 }
