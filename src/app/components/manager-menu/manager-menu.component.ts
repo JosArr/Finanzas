@@ -40,4 +40,12 @@ export class ManagerMenuComponent implements OnInit{
     this.managerService.cerrarSesion();
     this.router.navigate(['/loginManager']);
   }
+
+  navigateTo(menuItemText: string){
+    switch(menuItemText){
+      case 'Lista Clientes':
+        this.router.navigate(['/clientList']);
+        break;
+    }
+  }
 }
