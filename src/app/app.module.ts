@@ -18,10 +18,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import { ReactiveFormsModule } from '@angular/forms';
 import {FooterComponent} from "./public/footer/footer.component";
 import {ManagerService} from "./services/ManagerService/manager.service";
-import {IdentityScreenComponent} from "./components/identity-screen/identity-screen.component";
 import {LoginManagerComponent} from "./components/login-manager/login-manager.component";
-import {LoginClientComponent} from "./components/login-client/login-client.component";
-import {ClientMenuComponent} from "./components/client-menu/client-menu.component";
 import {ManagerMenuComponent} from "./components/manager-menu/manager-menu.component";
 import {UserService} from "./services/UserService/user.service";
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
@@ -32,10 +29,7 @@ import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.
     AppComponent,
     PageNotFoundComponent,
     FooterComponent,
-    IdentityScreenComponent,
     LoginManagerComponent,
-    LoginClientComponent,
-    ClientMenuComponent,
     ManagerMenuComponent,
   ],
   imports: [
