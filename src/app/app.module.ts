@@ -22,6 +22,7 @@ import {LoginManagerComponent} from "./components/login-manager/login-manager.co
 import {ManagerMenuComponent} from "./components/manager-menu/manager-menu.component";
 import {UserService} from "./services/UserService/user.service";
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
+import {ClientListComponent} from "./components/client-list/client-list.component";
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.
     FooterComponent,
     LoginManagerComponent,
     ManagerMenuComponent,
+    ClientListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+.clientListTab{
+  color: #FFFFFF;
+  padding-top: 15px;
+  width: 100%;
+  height: 40px;
+  background-color: #0077C2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="managerOptions">
-      <button class="menu-button" *ngFor="let item of menuItems">
+      <button class="menu-button" *ngFor="let item of menuItems" (click)="navigateTo(item.text)">
         <i class="{{ item.icon }}"></i>
         <span>{{ item.text }}</span>
       </button>
