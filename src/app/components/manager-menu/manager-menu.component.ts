@@ -24,7 +24,7 @@ export class ManagerMenuComponent implements OnInit{
     {icon: 'fa fa-list-ul', text: 'Lista Clientes'},
     {icon: 'fa fa-user-plus', text: 'Añadir Cliente'},
     {icon: 'fa fa-pen-to-square', text: 'Modificar Información'},
-    {icon: 'fa fa-chart-column', text: 'Reportes y estadísticas'}
+    {icon: 'fa fa-chart-column', text: 'Créditos'}
   ];
 
   ngOnInit() {
