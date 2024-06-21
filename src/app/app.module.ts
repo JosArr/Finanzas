@@ -23,6 +23,15 @@ import {ManagerMenuComponent} from "./components/manager-menu/manager-menu.compo
 import {UserService} from "./services/UserService/user.service";
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
 import {ClientListComponent} from "./components/client-list/client-list.component";
+import {
+  MatCell,
+  MatCellDef,
+  MatColumnDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
+  MatHeaderRow, MatHeaderRowDef, MatRow, MatRowDef,
+  MatTable
+} from "@angular/material/table";
 
 
 @NgModule({
@@ -49,6 +58,16 @@ import {ClientListComponent} from "./components/client-list/client-list.componen
     MatPaginatorModule,
     FormsModule,
     ReactiveFormsModule,
+    MatHeaderCell,
+    MatColumnDef,
+    MatCell,
+    MatTable,
+    MatHeaderCellDef,
+    MatCellDef,
+    MatHeaderRow,
+    MatRow,
+    MatRowDef,
+    MatHeaderRowDef,
 
   ],
   providers: [ManagerService, UserService],

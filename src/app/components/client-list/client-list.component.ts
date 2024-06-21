@@ -1,10 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { catchError, of, tap } from 'rxjs';
+import {UserService} from "../../services/UserService/user.service";
 
 @Component({
   selector: 'app-client-list',
   templateUrl: './client-list.component.html',
-  styleUrl: './client-list.component.css'
+  styleUrls: ['./client-list.component.css']
 })
-export class ClientListComponent {
+export class ClientListComponent implements OnInit {
+  clients: any[] = [];
+  displayedColumns: string[] = ['id', 'name', 'surname', 'email'];
 
+  constructor(private userService: UserService) { }
+
+  ngOnInit(): void {
+    this.userService.getAllUsers().pipe(
+      tap(data => this.clients = data),
+      catchError(error => {
+        console.error('Error fetching client list', error);
+        return of([]);
+      })
+    ).subscribe();
+  }
 }

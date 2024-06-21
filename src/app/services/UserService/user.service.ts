@@ -58,5 +58,7 @@ export class UserService {
   getUsuarioLogueado() {
     return this.usuarioLogueado;
   }
-
+  getAllUsers(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiURL);
+  }
 }
