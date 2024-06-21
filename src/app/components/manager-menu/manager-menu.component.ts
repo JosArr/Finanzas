@@ -46,6 +46,9 @@ export class ManagerMenuComponent implements OnInit{
       case 'Lista Clientes':
         this.router.navigate(['/clientList']);
         break;
+      case 'Créditos':
+        this.router.navigate(['/credits']);
+        break;
     }
   }
 }
