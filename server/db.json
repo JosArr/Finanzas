@@ -1,110 +1,109 @@
 {
   "usuarios": [
-    {
-      "id": 1,
-      "nombre": "John",
-      "apellido": "Doe",
-      "correo": "johndoe@example.com",
-      "contrasena": "pass123",
-      "perfil":"https://img-19.ccm.net/3bV7UcV_n3TGXo56bVMKqSzrGqo=/250x/smart/d6f67f5cdba34e5297e6d8c47e384169/ccmcms-esccm/34211459.png"
-    },
-    {
-      "id": 2,
-      "nombre": "Jane",
-      "apellido": "Smith",
-      "correo": "janesmith@example.com",
-      "contrasena": "pass456",
-      "perfil":"https://i.pinimg.com/222x/09/90/fe/0990fe16f61df266c4fc0923bff98c3b.jpg"
-    },
-    {
-      "id": 3,
-      "nombre": "Michael",
-      "apellido": "Johnson",
-      "correo": "michaeljohnson@example.com",
-      "contrasena": "pass789",
-      "perfil":"https://i.pinimg.com/736x/1e/c2/72/1ec2720afcf87398c7692f14c2ecdabb.jpg"
-    },
-    {
-      "id": 4,
-      "nombre": "Emily",
-      "apellido": "Brown",
-      "correo": "emilybrown@example.com",
-      "contrasena": "passabc",
-      "perfil":"https://i.pinimg.com/236x/5a/5f/d0/5a5fd0dc0f7810ef3aeaf58883d66113.jpg"
-    },
-    {
-      "id": 5,
-      "nombre": "David",
-      "apellido": "Taylor",
-      "correo": "davidtaylor@example.com",
-      "contrasena": "passdef",
-      "perfil":"https://www.petlife.mx/u/fotografias/m/2023/5/16/f768x1-2048_2175_5050.jpg"
-
-    },
-    {
-      "id": 6,
-      "nombre": "Sophia",
-      "apellido": "Anderson",
-      "correo": "sophiaanderson@example.com",
-      "contrasena": "passghi",
-      "perfil":"https://i.pinimg.com/originals/71/d2/32/71d2323d1bf91aa415a4ad339f015ff8.jpg"
-    },
-    {
-      "id": 7,
-      "nombre": "Daniel",
-      "apellido": "Wilson",
-      "correo": "danielwilson@example.com",
-      "contrasena": "passjkl",
-      "perfil":"https://i.pinimg.com/236x/1f/c3/b4/1fc3b4df2d3b2bff8e4004f1388f2db2.jpg"
-    },
-    {
-      "id": 8,
-      "nombre": "Olivia",
-      "apellido": "Martin",
-      "correo": "oliviamartin@example.com",
-      "contrasena": "passmno",
-      "perfil":"https://www.debate.com.mx/__export/1438103743137/sites/debate/img/trending/2015/07/28/selfie.jpg_1902800913.jpg"
-    },
-    {
-      "id": 9,
-      "nombre": "Matthew",
-      "apellido": "Thompson",
-      "correo": "matthewthompson@example.com",
-      "contrasena": "passpqr",
-      "perfil":"https://i.pinimg.com/236x/d5/f9/b7/d5f9b787cdb213bee291d5840308a8ad.jpg"
-    },
-    {
-      "id": 10,
-      "nombre": "Emma",
-      "apellido": "Harris",
-      "correo": "emmaharris@example.com",
-      "contrasena": "passstu",
-      "perfil":"https://pbs.twimg.com/media/E5PSn9pWEAQZ6Jj.jpg"
-    },
-    {
-      "nombre": "Sebas",
-      "apellido": "Cordova",
-      "correo": "eldiyei@gmail.com",
-      "contrasena": "manyao123",
-      "id": 11,
-      "perfil":"https://pbs.twimg.com/media/EdGzckAXkAA6tkI.jpg"
-    },
-    {
-      "nombre": "Pepe",
-      "apellido": "Panchrasio",
-      "correo": "ola@gmail.com",
-      "contrasena": "ola123456",
-      "id": 12,
-      "perfil":"https://www.petlife.mx/u/fotografias/m/2023/5/16/f768x1-2047_2174_5050.jpg"
-    },
-    {
-      "nombre": "Juan",
-      "apellido": "Caceres",
-      "correo": "jcaceres@gmail.com",
-      "contrasena": "elpepe123",
-      "id": 13,
-      "perfil":"https://www.drunkgaming.net/uploads/monthly_2022_08/20220805_231114.thumb.jpg.edffaeea0106f8768c1c7d3e9f141d4a.jpg"
-    }
+      {
+        "id": 1,
+        "nombre": "Jesue",
+        "apellido": "Arriaga",
+        "direccion": "Av. Los Faisanes 337, Chorrillos, Lima",
+        "telefono": "+51981580327",
+        "confiabilidad": 4
+      },
+      {
+        "id": 2,
+        "nombre": "Edward",
+        "apellido": "Tuxcatcher",
+        "direccion": "Jr. Las Gardenias 456, San Isidro, Lima",
+        "telefono": "+51989831534",
+        "confiabilidad": 3
+      },
+      {
+        "id": 3,
+        "nombre": "Michael",
+        "apellido": "Johnson",
+        "direccion": "Av. El Bosque 789, San Borja, Lima",
+        "telefono": "+51987654321",
+        "confiabilidad": 4
+      },
+      {
+        "id": 4,
+        "nombre": "Emily",
+        "apellido": "Brown",
+        "direccion": "Av. La Mar 456, Barranco, Lima",
+        "telefono": "+51998765432",
+        "confiabilidad": 3
+      },
+      {
+        "id": 5,
+        "nombre": "David",
+        "apellido": "Taylor",
+        "direccion": "Av. Los Pinos 789, La Molina, Lima",
+        "telefono": "+51987654321",
+        "confiabilidad": 5
+      },
+      {
+        "id": 6,
+        "nombre": "Sophia",
+        "apellido": "Anderson",
+        "direccion": "Jr. Las Orquídeas 123, Miraflores, Lima",
+        "telefono": "+51998765432",
+        "confiabilidad": 4
+      },
+      {
+        "id": 7,
+        "nombre": "Daniel",
+        "apellido": "Wilson",
+        "direccion": "Av. Las Palmas 456, San Isidro, Lima",
+        "telefono": "+51987654321",
+        "confiabilidad": 1
+      },
+      {
+        "id": 8,
+        "nombre": "Olivia",
+        "apellido": "Martin",
+        "direccion": "Av. Los Eucaliptos 789, San Borja, Lima",
+        "telefono": "+51998765432",
+        "confiabilidad": 3
+      },
+      {
+        "id": 9,
+        "nombre": "Matthew",
+        "apellido": "Thompson",
+        "direccion": "Av. La Encalada 123, Surco, Lima",
+        "telefono": "+51987654321",
+        "confiabilidad": 2
+      },
+      {
+        "id": 10,
+        "nombre": "Emma",
+        "apellido": "Harris",
+        "direccion": "Jr. Los Girasoles 456, San Borja, Lima",
+        "telefono": "+51998765432",
+        "confiabilidad": 1
+      },
+      {
+        "id": 11,
+        "nombre": "Sebas",
+        "apellido": "Cordova",
+        "direccion": "Av. El Pinar 789, La Molina, Lima",
+        "telefono": "+51987654321",
+        "confiabilidad": 2
+      },
+      {
+        "id": 12,
+        "nombre": "Pepe",
+        "apellido": "Panchrasio",
+        "direccion": "Av. Las Magnolias 123, Miraflores, Lima",
+        "telefono": "+51998765432",
+        "confiabilidad": 3
+      },
+      {
+        "id": 13,
+        "nombre": "Juan",
+        "apellido": "Caceres",
+        "direccion": "Jr. Los Cedros 456, San Isidro, Lima",
+        "telefono": "+51987654321",
+        "confiabilidad": 4
+      }
   ],
   "manager": [
     {
@@ -147,5 +146,84 @@
       "contrasena": "password5",
       "perfil": "https://i.imgur.com/mkmUPzg.jpeg"
     }
+  ],
+  "products": [
+    [
+      {
+        "id_producto": 1,
+        "nombre": "Arroz Blanco",
+        "precio": 1.99
+      },
+      {
+        "id_producto": 2,
+        "nombre": "Pasta Espagueti",
+        "precio": 1.50
+      },
+      {
+        "id_producto": 3,
+        "nombre": "Aceite de Oliva Extra Virgen",
+        "precio": 5.99
+      },
+      {
+        "id_producto": 4,
+        "nombre": "Conserva de Atún en Aceite",
+        "precio": 2.49
+      },
+      {
+        "id_producto": 5,
+        "nombre": "Sopa Instantánea de Pollo",
+        "precio": 0.99
+      },
+      {
+        "id_producto": 6,
+        "nombre": "Galletas Saladas",
+        "precio": 1.25
+      },
+      {
+        "id_producto": 7,
+        "nombre": "Café Molido",
+        "precio": 3.99
+      },
+      {
+        "id_producto": 8,
+        "nombre": "Mermelada de Fresa",
+        "precio": 2.75
+      },
+      {
+        "id_producto": 9,
+        "nombre": "Chips de Maíz",
+        "precio": 1.99
+      },
+      {
+        "id_producto": 10,
+        "nombre": "Salsa de Tomate",
+        "precio": 1.49
+      },
+      {
+        "id_producto": 11,
+        "nombre": "Chocolate en Barra",
+        "precio": 1.99
+      },
+      {
+        "id_producto": 12,
+        "nombre": "Papel Higiénico",
+        "precio": 0.99
+      },
+      {
+        "id_producto": 13,
+        "nombre": "Detergente en Polvo",
+        "precio": 4.50
+      },
+      {
+        "id_producto": 14,
+        "nombre": "Botellas de Agua Mineral",
+        "precio": 0.75
+      },
+      {
+        "id_producto": 15,
+        "nombre": "Papel Aluminio",
+        "precio": 1.99
+      }
+    ]
   ]
 }

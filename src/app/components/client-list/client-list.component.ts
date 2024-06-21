@@ -9,7 +9,7 @@ import {UserService} from "../../services/UserService/user.service";
 })
 export class ClientListComponent implements OnInit {
   clients: any[] = [];
-  displayedColumns: string[] = ['id', 'nombre', 'apellido', 'correo'];
+  displayedColumns: string[] = ['id', 'nombre', 'apellido', 'telefono'];
 
   constructor(private userService: UserService) { }
 

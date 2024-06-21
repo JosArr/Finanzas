@@ -4,12 +4,14 @@ import {LoginManagerComponent} from "./components/login-manager/login-manager.co
 import {ManagerMenuComponent} from "./components/manager-menu/manager-menu.component";
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
 import {ClientListComponent} from "./components/client-list/client-list.component";
+import {CreditsComponent} from "./components/credits/credits.component";
 
 const routes: Routes = [
   { path: 'loginManager', component: LoginManagerComponent },
   { path: 'managerMenu', component: ManagerMenuComponent },
   { path: 'clientList', component: ClientListComponent},
   { path: '', redirectTo: 'loginManager', pathMatch: 'full' },
+  {path:  'credits', component: CreditsComponent},
   { path: '**', component: PageNotFoundComponent },
 ];
 @NgModule({

@@ -32,6 +32,7 @@ import {
   MatHeaderRow, MatHeaderRowDef, MatRow, MatRowDef,
   MatTable
 } from "@angular/material/table";
+import {CreditsComponent} from "./components/credits/credits.component";
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import {
     FooterComponent,
     LoginManagerComponent,
     ManagerMenuComponent,
-    ClientListComponent
+    ClientListComponent,
+    CreditsComponent
   ],
   imports: [
     BrowserModule,
