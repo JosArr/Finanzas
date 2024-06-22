@@ -1,6 +1,6 @@
 <section class="ClientListScreen">
   <mat-toolbar class="clientListTab" color="primary">
-    <p>Lista de Clientes</p>
+    <p mat-button [routerLink]="'/managerMenu'">Lista de Clientes</p>
   </mat-toolbar>
   <div *ngIf="clients.length === 0">No hay clientes disponibles.</div>
   <table mat-table [dataSource]="clients" class="mat-elevation-z8">

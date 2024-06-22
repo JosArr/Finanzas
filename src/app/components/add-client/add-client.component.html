@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()" #clientForm="ngForm">
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required [(ngModel)]="newClient.nombre" name="nombre">
+  </div>
+  <div>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" required [(ngModel)]="newClient.apellido" name="apellido">
+  </div>
+  <div>
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" required [(ngModel)]="newClient.telefono" name="telefono">
+  </div>
+  <button type="submit" [disabled]="!clientForm.form.valid">Añadir Cliente</button>
+
+  <div class="redirection">
+    <button class="ClientButton" routerLink="/managerMenu">Regresar</button>
+  </div>
+</form>

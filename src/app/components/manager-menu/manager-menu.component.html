@@ -11,6 +11,10 @@
       </div>
     </div>
     <div class="managerOptions">
+      <button class="menu-button" (click)="showProfilePopUp()">
+        <i class='fa fa-pen-to-square'></i>
+        <span>Modificar Informacion</span>
+      </button>
       <button class="menu-button" *ngFor="let item of menuItems" (click)="navigateTo(item.text)">
         <i class="{{ item.icon }}"></i>
         <span>{{ item.text }}</span>
@@ -22,3 +26,35 @@
     </div>
   </div>
 </section>
+
+<div class="profile-popup" *ngIf="showPopup">
+  <div class="profile-popup-content">
+    <div class="popup-profile-info">
+      <a class="info">Mis Datos</a>
+      <div class="popup-user-details">
+        <div>
+          <label>Nombre: </label>
+          <p *ngIf="!editandoNombre">{{ nombre }}</p>
+          <input *ngIf="editandoNombre" [(ngModel)]="nombreEditado" type="name">
+        </div>
+        <div>
+          <label>Apellidos: </label>
+          <p *ngIf="!editandoApellido">{{ apellido }}</p>
+          <input *ngIf="editandoApellido" [(ngModel)]="apellidoEditado" type="lastname">
+        </div>
+        <div>
+          <label>Correo Electrónico: </label>
+          <p *ngIf="!editandoCorreo">{{ correoElectronico }}</p>
+          <input *ngIf="editandoCorreo" [(ngModel)]="correoEditado" type="email">
+        </div>
+        <div>
+          <label>Teléfono: </label>
+          <p *ngIf="!editandoTelefono">{{ telefono }}</p>
+          <input *ngIf="editandoTelefono" [(ngModel)]="telefonoEditado" type="phone">
+        </div>
+        <a class="update-button" mat-button  *ngIf="!editandoNombre" (click)="editarDatos()">Editar Datos</a>
+        <a class="update-button" mat-button *ngIf="editandoNombre" (click)="guardarDatos()">Actualizar Datos</a>
+      </div>
+    </div>
+  </div>
+</div>

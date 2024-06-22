@@ -1,113 +1,131 @@
 {
   "usuarios": [
-      {
-        "id": 1,
-        "nombre": "Jesue",
-        "apellido": "Arriaga",
-        "direccion": "Av. Los Faisanes 337, Chorrillos, Lima",
-        "telefono": "+51981580327",
-        "confiabilidad": 4
-      },
-      {
-        "id": 2,
-        "nombre": "Edward",
-        "apellido": "Tuxcatcher",
-        "direccion": "Jr. Las Gardenias 456, San Isidro, Lima",
-        "telefono": "+51989831534",
-        "confiabilidad": 3
-      },
-      {
-        "id": 3,
-        "nombre": "Michael",
-        "apellido": "Johnson",
-        "direccion": "Av. El Bosque 789, San Borja, Lima",
-        "telefono": "+51987654321",
-        "confiabilidad": 4
-      },
-      {
-        "id": 4,
-        "nombre": "Emily",
-        "apellido": "Brown",
-        "direccion": "Av. La Mar 456, Barranco, Lima",
-        "telefono": "+51998765432",
-        "confiabilidad": 3
-      },
-      {
-        "id": 5,
-        "nombre": "David",
-        "apellido": "Taylor",
-        "direccion": "Av. Los Pinos 789, La Molina, Lima",
-        "telefono": "+51987654321",
-        "confiabilidad": 5
-      },
-      {
-        "id": 6,
-        "nombre": "Sophia",
-        "apellido": "Anderson",
-        "direccion": "Jr. Las Orquídeas 123, Miraflores, Lima",
-        "telefono": "+51998765432",
-        "confiabilidad": 4
-      },
-      {
-        "id": 7,
-        "nombre": "Daniel",
-        "apellido": "Wilson",
-        "direccion": "Av. Las Palmas 456, San Isidro, Lima",
-        "telefono": "+51987654321",
-        "confiabilidad": 1
-      },
-      {
-        "id": 8,
-        "nombre": "Olivia",
-        "apellido": "Martin",
-        "direccion": "Av. Los Eucaliptos 789, San Borja, Lima",
-        "telefono": "+51998765432",
-        "confiabilidad": 3
-      },
-      {
-        "id": 9,
-        "nombre": "Matthew",
-        "apellido": "Thompson",
-        "direccion": "Av. La Encalada 123, Surco, Lima",
-        "telefono": "+51987654321",
-        "confiabilidad": 2
-      },
-      {
-        "id": 10,
-        "nombre": "Emma",
-        "apellido": "Harris",
-        "direccion": "Jr. Los Girasoles 456, San Borja, Lima",
-        "telefono": "+51998765432",
-        "confiabilidad": 1
-      },
-      {
-        "id": 11,
-        "nombre": "Sebas",
-        "apellido": "Cordova",
-        "direccion": "Av. El Pinar 789, La Molina, Lima",
-        "telefono": "+51987654321",
-        "confiabilidad": 2
-      },
-      {
-        "id": 12,
-        "nombre": "Pepe",
-        "apellido": "Panchrasio",
-        "direccion": "Av. Las Magnolias 123, Miraflores, Lima",
-        "telefono": "+51998765432",
-        "confiabilidad": 3
-      },
-      {
-        "id": 13,
-        "nombre": "Juan",
-        "apellido": "Caceres",
-        "direccion": "Jr. Los Cedros 456, San Isidro, Lima",
-        "telefono": "+51987654321",
-        "confiabilidad": 4
-      }
+    {
+      "id": "1",
+      "nombre": "Jesue",
+      "apellido": "Arriaga",
+      "direccion": "Av. Los Faisanes 337, Chorrillos, Lima",
+      "telefono": "+51981580327",
+      "confiabilidad": 4
+    },
+    {
+      "id": "2",
+      "nombre": "Edward",
+      "apellido": "Tuxcatcher",
+      "direccion": "Jr. Las Gardenias 456, San Isidro, Lima",
+      "telefono": "+51989831534",
+      "confiabilidad": 3
+    },
+    {
+      "id": "3",
+      "nombre": "Michael",
+      "apellido": "Johnson",
+      "direccion": "Av. El Bosque 789, San Borja, Lima",
+      "telefono": "+51987654321",
+      "confiabilidad": 4
+    },
+    {
+      "id": "4",
+      "nombre": "Emily",
+      "apellido": "Brown",
+      "direccion": "Av. La Mar 456, Barranco, Lima",
+      "telefono": "+51998765432",
+      "confiabilidad": 3
+    },
+    {
+      "id": "5",
+      "nombre": "David",
+      "apellido": "Taylor",
+      "direccion": "Av. Los Pinos 789, La Molina, Lima",
+      "telefono": "+51987654321",
+      "confiabilidad": 5
+    },
+    {
+      "id": "6",
+      "nombre": "Sophia",
+      "apellido": "Anderson",
+      "direccion": "Jr. Las Orquídeas 123, Miraflores, Lima",
+      "telefono": "+51998765432",
+      "confiabilidad": 4
+    },
+    {
+      "id": "7",
+      "nombre": "Daniel",
+      "apellido": "Wilson",
+      "direccion": "Av. Las Palmas 456, San Isidro, Lima",
+      "telefono": "+51987654321",
+      "confiabilidad": 1
+    },
+    {
+      "id": "8",
+      "nombre": "Olivia",
+      "apellido": "Martin",
+      "direccion": "Av. Los Eucaliptos 789, San Borja, Lima",
+      "telefono": "+51998765432",
+      "confiabilidad": 3
+    },
+    {
+      "id": "9",
+      "nombre": "Matthew",
+      "apellido": "Thompson",
+      "direccion": "Av. La Encalada 123, Surco, Lima",
+      "telefono": "+51987654321",
+      "confiabilidad": 2
+    },
+    {
+      "id": "10",
+      "nombre": "Emma",
+      "apellido": "Harris",
+      "direccion": "Jr. Los Girasoles 456, San Borja, Lima",
+      "telefono": "+51998765432",
+      "confiabilidad": 1
+    },
+    {
+      "id": "11",
+      "nombre": "Sebas",
+      "apellido": "Cordova",
+      "direccion": "Av. El Pinar 789, La Molina, Lima",
+      "telefono": "+51987654321",
+      "confiabilidad": 2
+    },
+    {
+      "id": "12",
+      "nombre": "Pepe",
+      "apellido": "Panchrasio",
+      "direccion": "Av. Las Magnolias 123, Miraflores, Lima",
+      "telefono": "+51998765432",
+      "confiabilidad": 3
+    },
+    {
+      "id": "13",
+      "nombre": "Juan",
+      "apellido": "Caceres",
+      "direccion": "Jr. Los Cedros 456, San Isidro, Lima",
+      "telefono": "+51987654321",
+      "confiabilidad": 4
+    },
+    {
+      "id": "3f49",
+      "nombre": "Juan",
+      "apellido": "Reyez",
+      "telefono": "+5199666831"
+    },
+    {
+      "id": "209a",
+      "nombre": "Marco",
+      "apellido": "Perez",
+      "telefono": "999638317"
+    },
+    {
+      "id": "cd97",
+      "nombre": "Juan",
+      "apellido": "Chavez",
+      "telefono": "+5199884612"
+    }
   ],
   "manager": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Abraham",
       "apellido": "Estrada",
       "correo": "elkchudovsky03@gmail.com",
@@ -115,7 +133,7 @@
       "perfil": "https://i.imgur.com/MHPa4ZJ.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Carlos",
       "apellido": "Lopez",
       "correo": "carloslopez@example.com",
@@ -123,7 +141,7 @@
       "perfil": "https://i.imgur.com/YcP0tik.jpeg"
     },
     {
-      "id": 3,
+      "id": "3",
       "nombre": "Lucia",
       "apellido": "Martinez",
       "correo": "luciamartinez@example.com",
@@ -131,7 +149,7 @@
       "perfil": "https://i.imgur.com/GJ95xpE.jpeg"
     },
     {
-      "id": 4,
+      "id": "4",
       "nombre": "Miguel",
       "apellido": "Rodriguez",
       "correo": "miguelrodriguez@example.com",
@@ -139,7 +157,7 @@
       "perfil": "https://i.imgur.com/7wQ61EW.jpeg"
     },
     {
-      "id": 5,
+      "id": "5",
       "nombre": "Ana",
       "apellido": "Fernandez",
       "correo": "anafernandez@example.com",
@@ -157,7 +175,7 @@
       {
         "id_producto": 2,
         "nombre": "Pasta Espagueti",
-        "precio": 1.50
+        "precio": 1.5
       },
       {
         "id_producto": 3,
@@ -212,7 +230,7 @@
       {
         "id_producto": 13,
         "nombre": "Detergente en Polvo",
-        "precio": 4.50
+        "precio": 4.5
       },
       {
         "id_producto": 14,

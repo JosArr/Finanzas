@@ -128,3 +128,79 @@
   border: 2px solid #8B4513;
   color: #0077C2;
 }
+
+input[type="name"], [type="lastname"], [type="email"],input[type="phone"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  color: black;
+}
+
+.profile-popup {
+  color: #8B4513;
+  width: 450px;
+  height: 400px;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  background-color: #7EC8E3;
+  border: 3px solid #FFA726;
+  border-radius: 20px;
+}
+.popup-profile-info{
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding:30px;
+}
+
+.popup-profile-info p {
+  font-size: 20px;
+  flex: 1;
+}
+.popup-profile-info h3 {
+  font-size: 35px;
+  flex: 1;
+}
+.popup-profile-info button{
+  left: 70%;
+  position: absolute;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(235, 105, 105);
+}
+.popup-profile-info  a button {
+  left: 60%;
+  top: 23%;
+  font-size: 15px;
+  position: absolute;
+}
+.popup-profile-info  p button {
+  left: 80%;
+  top: 23%;
+  font-size: 15px;
+  position: absolute;
+}
+.popup-profile-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 80%;
+  position:relative;
+  margin-left: 30px;
+}
+
+.popup-user-details button{
+  font-size: 15px;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 90px;
+}
+input[type="text"] {
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
