@@ -1,19 +1,25 @@
-<form (ngSubmit)="onSubmit()" #clientForm="ngForm">
-  <div>
+<form (ngSubmit)="onSubmit()" #clientForm="ngForm" class="form-container">
+  <h2>Añadir Cliente</h2>
+  <div class="form-group">
     <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" required [(ngModel)]="newClient.nombre" name="nombre">
+    <input type="text" id="nombre" required [(ngModel)]="newClient.nombre" name="nombre" placeholder="Ingresa el nombre">
   </div>
-  <div>
+  <div class="form-group">
     <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" required [(ngModel)]="newClient.apellido" name="apellido">
+    <input type="text" id="apellido" required [(ngModel)]="newClient.apellido" name="apellido" placeholder="Ingresa el apellido">
   </div>
-  <div>
+  <div class="form-group">
     <label for="telefono">Teléfono:</label>
-    <input type="text" id="telefono" required [(ngModel)]="newClient.telefono" name="telefono">
+    <input type="text" id="telefono" required [(ngModel)]="newClient.telefono" name="telefono" placeholder="Ingresa el teléfono">
   </div>
-  <button type="submit" [disabled]="!clientForm.form.valid">Añadir Cliente</button>
+  <div class="form-group">
+    <label for="confiabilidad">Confiabilidad:</label>
+    <input type="text" id="confiabilidad" required [(ngModel)]="newClient.confiabilidad" name="confiabilidad" placeholder="Ingresa la confiabilidad">
+  </div>
+
+  <button type="submit" [disabled]="!clientForm.form.valid" class="submit-button">Añadir Cliente</button>
 
   <div class="redirection">
-    <button class="ClientButton" routerLink="/managerMenu">Regresar</button>
+    <button class="client-button" routerLink="/managerMenu">Regresar</button>
   </div>
 </form>

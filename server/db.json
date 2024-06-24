@@ -121,6 +121,47 @@
       "nombre": "Juan",
       "apellido": "Chavez",
       "telefono": "+5199884612"
+    },
+    {
+      "id": "e5c9",
+      "nombre": "Adrian",
+      "apellido": "Ochoa",
+      "telefono": "+51975789566"
+    },
+    {
+      "id": "df7b",
+      "nombre": "Rosa",
+      "apellido": "Mamani ",
+      "telefono": "+51998641616",
+      "confiabilidad": "4"
+    },
+    {
+      "id": "5297",
+      "nombre": "Benito",
+      "apellido": "Tocamelo",
+      "telefono": "+5199876984",
+      "confiabilidad": "3"
+    },
+    {
+      "id": "5390",
+      "nombre": "Emerson",
+      "apellido": "Panta",
+      "telefono": "+51999686468",
+      "confiabilidad": 5
+    },
+    {
+      "id": "6e81",
+      "nombre": "Emerson",
+      "apellido": "Panta",
+      "telefono": "+51999686468",
+      "confiabilidad": "5"
+    },
+    {
+      "id": "88fe",
+      "nombre": "Julio",
+      "apellido": "Ardiles",
+      "telefono": "+5199868748",
+      "confiabilidad": 4
     }
   ],
   "manager": [
