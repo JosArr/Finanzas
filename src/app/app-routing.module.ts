@@ -6,6 +6,7 @@ import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.
 import {ClientListComponent} from "./components/client-list/client-list.component";
 import {CreditsComponent} from "./components/credits/credits.component";
 import {AddClientComponent} from "./components/add-client/add-client.component";
+import {CreditViewComponent} from "./components/credit-view/credit-view.component";
 
 const routes: Routes = [
   { path: 'loginManager', component: LoginManagerComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'add-client', component: AddClientComponent },
   { path: '', redirectTo: 'loginManager', pathMatch: 'full' },
   {path:  'credits', component: CreditsComponent},
+  {path: 'credit-view', component: CreditViewComponent},
   { path: '**', component: PageNotFoundComponent },
 
 ];
