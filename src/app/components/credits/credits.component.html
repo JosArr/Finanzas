@@ -1,1 +1,15 @@
-<p>credits works!</p>
+<div>
+  <h2>Añadir Crédito</h2>
+  <form (ngSubmit)="addCredit()">
+    <label for="clienteId">ID del Cliente:</label>
+    <input type="text" id="clienteId" [(ngModel)]="newCredit.clienteId" name="clienteId">
+    <br>
+    <label for="monto">Monto:</label>
+    <input type="number" id="monto" [(ngModel)]="newCredit.monto" name="monto">
+    <br>
+    <label for="duracionMeses">Duración (Meses):</label>
+    <input type="number" id="duracionMeses" [(ngModel)]="newCredit.duracionMeses" name="duracionMeses">
+    <br>
+    <button type="submit">Añadir Crédito</button>
+  </form>
+</div>

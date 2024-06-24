@@ -108,19 +108,22 @@
       "id": "3f49",
       "nombre": "Juan",
       "apellido": "Reyez",
-      "telefono": "+5199666831"
+      "telefono": "+5199666831",
+      "confiabiliad": 2
     },
     {
       "id": "209a",
       "nombre": "Marco",
       "apellido": "Perez",
-      "telefono": "999638317"
+      "telefono": "999638317",
+      "confiabiliad": 5
     },
     {
       "id": "cd97",
       "nombre": "Juan",
       "apellido": "Chavez",
-      "telefono": "+5199884612"
+      "telefono": "+5199884612",
+      "confiabiliad": 2
     },
     {
       "id": "e5c9",
@@ -171,7 +174,10 @@
       "apellido": "Estrada",
       "correo": "elkchudovsky03@gmail.com",
       "contrasena": "abraham123",
-      "perfil": "https://i.imgur.com/MHPa4ZJ.png"
+      "perfil": "https://i.imgur.com/MHPa4ZJ.png",
+      "name": "",
+      "last_name": "",
+      "email": "elkchudovsky03@gmail.com"
     },
     {
       "id": "2",
@@ -284,5 +290,25 @@
         "precio": 1.99
       }
     ]
+  ],
+  "creditos": [
+    {
+      "id": "",
+      "clienteId": "1",
+      "monto": 100,
+      "tasaInteres": 8.5,
+      "fechaInicio": "2024-06-24T19:12:01.859Z",
+      "duracionMeses": 2,
+      "confiabilidad": 4
+    },
+    {
+      "id": "",
+      "clienteId": "2",
+      "monto": 150,
+      "tasaInteres": 9,
+      "fechaInicio": "2024-06-24T19:12:58.519Z",
+      "duracionMeses": 4,
+      "confiabilidad": 3
+    }
   ]
 }
