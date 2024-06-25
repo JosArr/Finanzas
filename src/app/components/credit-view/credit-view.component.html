@@ -1,9 +1,14 @@
+<div class="filter-container">
+  <input type="text" [(ngModel)]="clientIdSearchTerm" placeholder="Ingrese el ID del Cliente" />
+  <button (click)="searchCreditsByClientId()">Buscar</button>
+</div>
+
 <div class="credit-list">
-  <div *ngFor="let credit of credits" class="credit-item" (click)="CreditDetails(credit)">
+  <div *ngFor="let credit of filteredCredits" class="credit-item" (click)="CreditDetails(credit)">
     <p>Cliente ID: {{ credit.clienteId }}</p>
     <p>Monto: {{ credit.monto }}</p>
     <p>Tasa de Interés: {{ credit.tasaInteres }}%</p>
-    <p>Fecha Inicio: {{ credit.fechaInicio }}</p>
+    <p>Fecha Inicio: {{ credit.fechaInicio | date }}</p>
     <p>Duración (meses): {{ credit.duracionMeses }}</p>
     <p>Confiabilidad: {{ credit.confiabilidad }}</p>
   </div>
@@ -13,9 +18,17 @@
   <h3>Detalles del crédito:</h3>
   <p>Cliente ID: {{ selectedCredit.clienteId }}</p>
   <p>Monto: {{ selectedCredit.monto }}</p>
-  <p>Tasa de Interés anual: {{ calculateAnnualRate(selectedCredit.confiabilidad) }}</p>
-  <p>Interés Total: {{ calculateInteresTotal(selectedCredit) }}</p>
-  <p>Límite de Crédito: {{ creditLimit }}</p>
-  <p>Tasa Efectiva Anual: {{ annualEffectiveRate }}</p>
-  <!-- Aquí puedes añadir más detalles según sea necesario -->
+  <p>Tasa de Interés anual: {{ annualEffectiveRate.toFixed(2) }}%</p>
+  <p>Interés Total: {{ calculateInteresTotal(selectedCredit).toFixed(2) | currency }}</p>
+  <p>Límite de Crédito: {{ creditLimit | currency }}</p>
+  <p>Crédito Utilizado: {{ totalUsedCredit | currency }}</p>
+  <p>Cuota Mensual: {{ monthlyInstallment | currency }}</p>
+
+  <div *ngIf="checkCreditLimit()">
+    <p style="color: red;">¡Ha superado el límite de crédito!</p>
+  </div>
+
+  <div *ngIf="isPaymentLate()">
+    <p style="color: red;">El pago está atrasado. Se aplicará una tasa de interés moratoria del {{ moratoryInterestRate }}%</p>
+  </div>
 </div>
