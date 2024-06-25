@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'add-client', component: AddClientComponent },
   { path: '', redirectTo: 'loginManager', pathMatch: 'full' },
   {path:  'credits', component: CreditsComponent},
-  {path: 'credit-view', component: CreditViewComponent},
+  {path: 'credit-view/:id', component: CreditViewComponent},
   { path: '**', component: PageNotFoundComponent },
 
 ];
