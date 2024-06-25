@@ -1,23 +1,21 @@
 <div class="credit-list">
-  <h2>Lista de Créditos</h2>
-  <table>
-    <thead>
-    <tr>
-      <th>ID del Cliente</th>
-      <th>Monto</th>
-      <th>Tasa de Interés</th>
-      <th>Duración (Meses)</th>
-      <th>Fecha de Inicio</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let credit of credits">
-      <td data-label="ID del Cliente">{{ credit.clienteId }}</td>
-      <td data-label="Monto">{{ credit.monto | currency }}</td>
-      <td data-label="Tasa de Interés">{{ credit.tasaInteres }}%</td>
-      <td data-label="Duración (Meses)">{{ credit.duracionMeses }}</td>
-      <td data-label="Fecha de Inicio">{{ credit.fechaInicio | date:'shortDate' }}</td>
-    </tr>
-    </tbody>
-  </table>
+  <div *ngFor="let credit of credits" class="credit-item" (click)="CreditDetails(credit)">
+    <p>Cliente ID: {{ credit.clienteId }}</p>
+    <p>Monto: {{ credit.monto }}</p>
+    <p>Tasa de Interés: {{ credit.tasaInteres }}%</p>
+    <p>Fecha Inicio: {{ credit.fechaInicio }}</p>
+    <p>Duración (meses): {{ credit.duracionMeses }}</p>
+    <p>Confiabilidad: {{ credit.confiabilidad }}</p>
+  </div>
+</div>
+
+<div *ngIf="selectedCredit" class="credit-details">
+  <h3>Detalles del crédito:</h3>
+  <p>Cliente ID: {{ selectedCredit.clienteId }}</p>
+  <p>Monto: {{ selectedCredit.monto }}</p>
+  <p>Tasa de Interés anual: {{ calculateAnnualRate(selectedCredit.confiabilidad) }}</p>
+  <p>Interés Total: {{ calculateInteresTotal(selectedCredit) }}</p>
+  <p>Límite de Crédito: {{ creditLimit }}</p>
+  <p>Tasa Efectiva Anual: {{ annualEffectiveRate }}</p>
+  <!-- Aquí puedes añadir más detalles según sea necesario -->
 </div>

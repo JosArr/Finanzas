@@ -309,6 +309,33 @@
       "fechaInicio": "2024-06-24T19:12:58.519Z",
       "duracionMeses": 4,
       "confiabilidad": 3
+    },
+    {
+      "id": "",
+      "clienteId": "3",
+      "monto": 200,
+      "tasaInteres": 8.5,
+      "fechaInicio": "2024-08-03T19:13:01.859Z",
+      "duracionMeses": 2,
+      "confiabilidad": 5
+    },
+    {
+      "id": "",
+      "clienteId": "5",
+      "monto": 400,
+      "tasaInteres": 8,
+      "fechaInicio": "2024-06-25T07:40:17.377Z",
+      "duracionMeses": 2,
+      "confiabilidad": 5
+    },
+    {
+      "id": "",
+      "clienteId": "9",
+      "monto": 200,
+      "tasaInteres": 9.5,
+      "fechaInicio": "2024-06-25T07:43:57.603Z",
+      "duracionMeses": 3,
+      "confiabilidad": 2
     }
   ]
 }
