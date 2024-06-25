@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { catchError, of, tap } from 'rxjs';
 import {UserService} from "../../services/UserService/user.service";
+import {Credit} from "../../models/models/credit";
 
 @Component({
   selector: 'app-client-list',
@@ -21,5 +22,16 @@ export class ClientListComponent implements OnInit {
         return of([]);
       })
     ).subscribe();
+  }
+  calcularInteresTotal(credit: Credit): number {
+    const tasaInteresMensual = credit.tasaInteres / 100 / 12;
+    const numeroPagos = credit.duracionMeses;
+    const monto = credit.monto;
+
+    const cuotaMensual = (monto * tasaInteresMensual) / (1 - Math.pow(1 + tasaInteresMensual, -numeroPagos));
+    const totalPagado = cuotaMensual * numeroPagos;
+    const interesTotal = totalPagado - monto;
+
+    return interesTotal;
   }
 }

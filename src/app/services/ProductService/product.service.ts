@@ -5,6 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class ProductService {
 
-  private apiUrl = 'https://my-json-server.typicode.com/XLianLZ/dbFinazas/products';
+  private apiUrl = 'http://localhost:3000/products';
   constructor() { }
 }
