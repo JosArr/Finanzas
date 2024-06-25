@@ -1,8 +1,19 @@
-/* Form Container */
-.form-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
+.credits-screen{
+    background: url(../../../assets/images/banner.png) no-repeat fixed;
+    padding: 20px;
+}
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta la altura según sea necesario */
+}
+
+.form-group {
+  width: 100%;
+  max-width: 400px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 10px;
   background-color: #007bff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,6 +36,7 @@ input[type="number"] {
   border-radius: 4px;
 }
 
+/* Submit Button Styles */
 .submit-button {
   width: 100%;
   padding: 10px;
@@ -40,5 +52,14 @@ input[type="number"] {
 /* Submit Button Hover Styles */
 .submit-button:hover {
   background-color: #0056b3;
+}
+
+/* Estilos para el título "Créditos" */
+h1 {
+  text-align: center;
+  color: #3055e1; /* Color del texto */
+  font-size: 120px; /* Tamaño de fuente */
+  margin-bottom: 20px; /* Espaciado inferior */
+  font-family: "Montserrat", sans-serif; /* Fuente */
 }
 
