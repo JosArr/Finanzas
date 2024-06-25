@@ -34,6 +34,7 @@ import {
 } from "@angular/material/table";
 import {CreditsComponent} from "./components/credits/credits.component";
 import {AddClientComponent} from "./components/add-client/add-client.component";
+import {CreditViewComponent} from "./components/credit-view/credit-view.component";
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import {AddClientComponent} from "./components/add-client/add-client.component";
     ManagerMenuComponent,
     ClientListComponent,
     CreditsComponent,
-    AddClientComponent
+    AddClientComponent,
+    CreditViewComponent
   ],
   imports: [
     BrowserModule,
