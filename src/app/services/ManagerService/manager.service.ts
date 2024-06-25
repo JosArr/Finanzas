@@ -8,7 +8,7 @@ import {map, Observable} from "rxjs";
 })
 
 export class ManagerService {
-  private apiURL = 'http://localhost:3000/manager';
+  private apiURL = 'https://my-json-server.typicode.com/XLianLZ/dbFinazas/manager';
   isLoggedIn: boolean = false;
   managerLogueado: any;
   constructor(private http: HttpClient) { }

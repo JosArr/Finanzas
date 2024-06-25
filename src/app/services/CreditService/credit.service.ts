@@ -7,8 +7,8 @@ import {Credit} from "../../models/models/credit";
   providedIn: 'root'
 })
 export class CreditService {
-  private apiURL = 'http://localhost:3000/creditos';
-  private userURL = 'http://localhost:3000/usuarios';
+  private apiURL = 'https://my-json-server.typicode.com/XLianLZ/dbFinazas/creditos';
+  private userURL = 'https://my-json-server.typicode.com/XLianLZ/dbFinazas/usuarios';
 
   constructor(private http: HttpClient) { }
 
