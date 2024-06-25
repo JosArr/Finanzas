@@ -9,7 +9,7 @@ import { CreditService } from '../../services/CreditService/credit.service';
 })
 export class CreditsComponent implements OnInit {
   credits: Credit[] = [];
-  newCredit: Partial<Credit> = {}; // Inicializar sin el campo `tipo`
+  newCredit: Partial<Credit> = {};
 
   constructor(private creditService: CreditService) { }
 
@@ -49,7 +49,7 @@ export class CreditsComponent implements OnInit {
       }
 
       const nuevoCredito: Credit = {
-        id: '', // Generar ID de manera adecuada
+        id: '',
         clienteId: clienteId,
         monto: monto,
         tasaInteres: tasaInteres,
@@ -76,4 +76,6 @@ export class CreditsComponent implements OnInit {
 
     return interesTotal;
   }
+
+
 }
