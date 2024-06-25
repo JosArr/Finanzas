@@ -1,1 +1,23 @@
-<p>credit-view works!</p>
+<div class="credit-list">
+  <h2>Lista de Créditos</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>ID del Cliente</th>
+      <th>Monto</th>
+      <th>Tasa de Interés</th>
+      <th>Duración (Meses)</th>
+      <th>Fecha de Inicio</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let credit of credits">
+      <td data-label="ID del Cliente">{{ credit.clienteId }}</td>
+      <td data-label="Monto">{{ credit.monto | currency }}</td>
+      <td data-label="Tasa de Interés">{{ credit.tasaInteres }}%</td>
+      <td data-label="Duración (Meses)">{{ credit.duracionMeses }}</td>
+      <td data-label="Fecha de Inicio">{{ credit.fechaInicio | date:'shortDate' }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
